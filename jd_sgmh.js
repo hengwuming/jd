@@ -262,7 +262,12 @@ function interact_template_getLotteryResult(taskId,timeout = 0) {
 function showMsg() {
   message += `任务已完成，本次运行获得京豆${$.beans}`
   return new Promise(resolve => {
+<<<<<<< HEAD
     $.msg($.name, '', `【京东账号${$.index}】${$.nickName}\n${message}`);
+=======
+    if ($.beans) $.msg($.name, '', `【京东账号${$.index}】${$.nickName}\n${message}`);
+    $.log(`【京东账号${$.index}】${$.nickName}\n${message}`);
+>>>>>>> e36bfab (11)
     resolve()
   })
 }

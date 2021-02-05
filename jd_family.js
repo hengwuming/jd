@@ -58,8 +58,11 @@ if ($.isNode()) {
         $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
         if ($.isNode()) {
           await notify.sendNotify(`${$.name}cookie已失效 - ${$.UserName}`, `京东账号${$.index} ${$.UserName}\n请重新登录获取cookie`);
+<<<<<<< HEAD
         } else {
           $.setdata('', `CookieJD${i ? i + 1 : ""}`);//cookie失效，故清空cookie。$.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。
+=======
+>>>>>>> e36bfab (11)
         }
         continue
       }
@@ -176,7 +179,11 @@ function doTask(taskId) {
 }
 
 function taskUrl(function_id, body = '') {
+<<<<<<< HEAD
   body = `activeid=${$.info.activeId}&token=${$.info.actToken}&sceneval=2&shareid=&_=${new Date().getTime()}&callback=query&${body}`
+=======
+  body = `activeid=${$.info.activeId}&token=${$.info.actToken}&sceneval=2&shareid=&t=${Date.now()}&_=${new Date().getTime()}&callback=query&${body}`
+>>>>>>> e36bfab (11)
   return {
     url: `https://wq.jd.com/activep3/family/${function_id}?${body}`,
     headers: {

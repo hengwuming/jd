@@ -73,8 +73,11 @@ const JD_API_HOST = 'https://shopping-festival.m.jd.com/sf/';
 
         if ($.isNode()) {
           await notify.sendNotify(`${$.name}cookie已失效 - ${$.UserName}`, `京东账号${$.index} ${$.UserName}\n请重新登录获取cookie`);
+<<<<<<< HEAD
         } else {
           $.setdata('', `CookieJD${i ? i + 1 : ""}`);//cookie失效，故清空cookie。$.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。
+=======
+>>>>>>> e36bfab (11)
         }
         continue
       }
