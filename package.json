@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "LXK9301",
-=======
-  "name": "ad",
->>>>>>> e36bfab (11)
   "version": "1.0.0",
   "description": "{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}",
   "main": "AlipayManor.js",
@@ -12,11 +8,7 @@
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
     "url": "https://github.com/LXK9301/jd_scripts.git"
-=======
-    "url": "git+https://github.com/LXK9301/jd_scripts.git"
->>>>>>> e36bfab (11)
   },
   "keywords": [
     "京东薅羊毛工具, 京东水果、宠物、种豆等等"
@@ -32,13 +24,5 @@
     "request": "^2.88.2",
     "tough-cookie": "^4.0.0",
     "tunnel": "0.0.6"
-<<<<<<< HEAD
   }
-=======
-  },
-  "bugs": {
-    "url": "https://github.com/LXK9301/jd_scripts/issues"
-  },
-  "homepage": "https://github.com/LXK9301/jd_scripts#readme"
->>>>>>> e36bfab (11)
 }

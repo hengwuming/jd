@@ -49,13 +49,8 @@ if ($.isNode()) {
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [
-<<<<<<< HEAD
-  `oMZeX-5M9YkGAOtiP7Rz_yglorV31MmxRvuK5Itar4d2t7V2@oMZeXbBAqIJUAbA3ZrZ2rsve9AyA3Kq-6R23UrqYSIOwFRDm@sM1uBLkXpYMbT64xe_w8_kRvuJH61i9EFx9HXw@oMZeXu5Nod1UAbY1ZrB4_Hors4ZLQ_-Owd64xO5a5HY66IcF`,
-  `oMZeX-5M9YkGAOtiP7Rz_yglorV31MmxRvuK5Itar4d2t7V2@oMZeXbBAqIJUAbA3ZrZ2rsve9AyA3Kq-6R23UrqYSIOwFRDm@sM1uBLkXpYMbT64xe_w8_kRvuJH61i9EFx9HXw@oMZeXu5Nod1UAbY1ZrB4_Hors4ZLQ_-Owd64xO5a5HY66IcF`,
-=======
   `oMZeXLUa89gFB7MxNrRzrueku1ztEEnWTbbYS9ouZsWHUK40@oMZeXeZJqdhfAeAyNrd2re3zVX3zUxALxgPuDlVwKASrEJRm@oMZeGJ8Q3ssja5hkb88ysz1myVkiBAsZmXvm21tn0f79FMQ@oMZeXe9Kod0DCrE5M7Z1qcr4t7hsbJF9IrJMcAWup9BZyXgL@oMZeX-dNqIwDUbdiNLhy_et64XAJ-lwyzdJkpU5uu5x9qVco`,
   `oMZeXLUa89gFB7MxNrRzrueku1ztEEnWTbbYS9ouZsWHUK40@oMZeXeZJqdhfAeAyNrd2re3zVX3zUxALxgPuDlVwKASrEJRm@oMZeGJ8Q3ssja5hkb88ysz1myVkiBAsZmXvm21tn0f79FMQ@oMZeXe9Kod0DCrE5M7Z1qcr4t7hsbJF9IrJMcAWup9BZyXgL@oMZeX-dNqIwDUbdiNLhy_et64XAJ-lwyzdJkpU5uu5x9qVco`,
->>>>>>> e36bfab (11)
 ];
 !(async () => {
   await requireConfig();
@@ -157,11 +152,7 @@ async function helpFriends() {
     if (!code) continue
     await helpFriend(code)
     if (!$.canHelp) return
-<<<<<<< HEAD
-    await $.wait(3000)
-=======
     await $.wait(4000)
->>>>>>> e36bfab (11)
   }
 }
 
@@ -331,11 +322,7 @@ function helpFriend(inviteId) {
           if (data && data.data['bizCode'] === 0) {
             console.log(data.data.result.msg)
           } else {
-<<<<<<< HEAD
-            console.log(data.data.bizMsg)
-=======
             console.log(`helpFriends ${data.data.bizMsg}`)
->>>>>>> e36bfab (11)
             if (data.data.bizCode === -523) {
               $.canHelp = false
             }
